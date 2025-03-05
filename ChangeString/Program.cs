@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace ChangeString
 {
@@ -11,9 +11,10 @@ namespace ChangeString
 
             Console.WriteLine("Caráter: ");
             char carater = Console.ReadKey().KeyChar;
-            Console.WriteLine();
+            Console.WriteLine("\n");
 
-            Console.WriteLine(" " + texto.Replace(carater, 'x'));
+            string r = TupleExtensions.Replace(carater, 'x');
+            Console.WriteLine("Resultado: " + resultado);
         }
     }
 }
