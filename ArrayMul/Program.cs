@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 
 namespace ArrayMul
@@ -42,7 +42,7 @@ namespace ArrayMul
             Console.WriteLine($"| {arg6,7:F2} |");
 
             Console.WriteLine("\nA . b =");
-            Console.WriteLine("| {result[0],7:F2} |");
+            Console.WriteLine($"| {result[0],7:F2} |");
             Console.WriteLine($"| {result[1],7:F2} |");
         }
     }
