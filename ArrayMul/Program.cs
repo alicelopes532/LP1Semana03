@@ -19,7 +19,7 @@ namespace ArrayMul
             float arg5 = float.Parse(args[4]);
             float arg6 = float.Parse(args[5]);
 
-            float[,] A = new float[2, 2] { { arg1, agr2}, { arg3, arg4 } };
+            float[,] A = new float[2, 2] { { arg1, arg2}, { arg3, arg4 } };
             float[] b = new float[2] { arg5, arg6 };
 
             float[] result = new float[2];
