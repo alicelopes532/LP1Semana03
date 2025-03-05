@@ -6,23 +6,12 @@ namespace ChangeString
     {
         private static void Main(string[] args)
         {
-             Console.Write("Digite uma string: ");
+             Console.Write("String: ");
             string texto = Console.ReadLine() ?? "";
 
-            char caractere;
-            while (true)
-            {
-                Console.Write("Digite um único caráter para substituir: ");
-                string entrada = Console.ReadLine();
-            
-                if (!string.IsNullOrEmpty(entrada) && entrada.Length == 1)
-                {
-                    caractere = entrada[0];
-                    break;
-                }
-            
-                Console.WriteLine("Por favor, digite apenas um único caráter.");
-            }
+            Console.Write("Caráter: ");
+            char caractere = Console.ReadKey().KeyChar;
+            Console.WriteLine("\n");
 
             string resultado = texto.Replace(caractere, 'x');
             Console.WriteLine("String modificada: " + resultado);
