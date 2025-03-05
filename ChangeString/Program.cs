@@ -6,7 +6,7 @@ namespace ChangeString
     {
         private static void Main(string[] args)
         {
-             Console.Write("String: ");
+            Console.Write("String: ");
             string texto = Console.ReadLine() ?? "";
 
             Console.Write("Caráter: ");
